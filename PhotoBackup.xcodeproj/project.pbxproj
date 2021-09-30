@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF36D5BCAE9F643B0914B8BC /* Pods_PhotoBackup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A96C316121C25E8BD93235 /* Pods_PhotoBackup.framework */; };
 		FE2D6D7F270571DF0033C22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D6D7E270571DF0033C22D /* AppDelegate.swift */; };
 		FE2D6D81270571DF0033C22D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D6D80270571DF0033C22D /* SceneDelegate.swift */; };
-		FE2D6D83270571DF0033C22D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D6D82270571DF0033C22D /* ViewController.swift */; };
 		FE2D6D86270571DF0033C22D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE2D6D84270571DF0033C22D /* Main.storyboard */; };
 		FE2D6D88270571E00033C22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE2D6D87270571E00033C22D /* Assets.xcassets */; };
 		FE2D6D8B270571E00033C22D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE2D6D89270571E00033C22D /* LaunchScreen.storyboard */; };
+		FE2D6D952705780C0033C22D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D6D942705780C0033C22D /* LoginViewController.swift */; };
+		FE2D6D98270578370033C22D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D6D97270578370033C22D /* HomeViewController.swift */; };
+		FE2D6D9B270578950033C22D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D6D9A270578950033C22D /* ImageViewController.swift */; };
+		FE2D6D9F2705E55B0033C22D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE2D6D9E2705E55B0033C22D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01A96C316121C25E8BD93235 /* Pods_PhotoBackup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoBackup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F75E14DE4C6214E2A7DE4F4 /* Pods-PhotoBackup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoBackup.release.xcconfig"; path = "Target Support Files/Pods-PhotoBackup/Pods-PhotoBackup.release.xcconfig"; sourceTree = "<group>"; };
+		E2CECB88A30F04962AB84261 /* Pods-PhotoBackup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoBackup.debug.xcconfig"; path = "Target Support Files/Pods-PhotoBackup/Pods-PhotoBackup.debug.xcconfig"; sourceTree = "<group>"; };
 		FE2D6D7B270571DF0033C22D /* PhotoBackup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBackup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2D6D7E270571DF0033C22D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE2D6D80270571DF0033C22D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FE2D6D82270571DF0033C22D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FE2D6D85270571DF0033C22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE2D6D87270571E00033C22D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE2D6D8A270571E00033C22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE2D6D8C270571E00033C22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE2D6D942705780C0033C22D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FE2D6D97270578370033C22D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FE2D6D9A270578950033C22D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		FE2D6D9E2705E55B0033C22D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF36D5BCAE9F643B0914B8BC /* Pods_PhotoBackup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2062882D87F4340D29D283F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2CECB88A30F04962AB84261 /* Pods-PhotoBackup.debug.xcconfig */,
+				6F75E14DE4C6214E2A7DE4F4 /* Pods-PhotoBackup.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		70611C873DCCC20D0463653A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01A96C316121C25E8BD93235 /* Pods_PhotoBackup.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FE2D6D72270571DF0033C22D = {
 			isa = PBXGroup;
 			children = (
 				FE2D6D7D270571DF0033C22D /* PhotoBackup */,
 				FE2D6D7C270571DF0033C22D /* Products */,
+				2062882D87F4340D29D283F2 /* Pods */,
+				70611C873DCCC20D0463653A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +87,12 @@
 		FE2D6D7D270571DF0033C22D /* PhotoBackup */ = {
 			isa = PBXGroup;
 			children = (
+				FE2D6D9E2705E55B0033C22D /* GoogleService-Info.plist */,
 				FE2D6D7E270571DF0033C22D /* AppDelegate.swift */,
 				FE2D6D80270571DF0033C22D /* SceneDelegate.swift */,
-				FE2D6D82270571DF0033C22D /* ViewController.swift */,
+				FE2D6D9A270578950033C22D /* ImageViewController.swift */,
+				FE2D6D97270578370033C22D /* HomeViewController.swift */,
+				FE2D6D942705780C0033C22D /* LoginViewController.swift */,
 				FE2D6D84270571DF0033C22D /* Main.storyboard */,
 				FE2D6D87270571E00033C22D /* Assets.xcassets */,
 				FE2D6D89270571E00033C22D /* LaunchScreen.storyboard */,
@@ -74,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE2D6D8F270571E00033C22D /* Build configuration list for PBXNativeTarget "PhotoBackup" */;
 			buildPhases = (
+				E83A8F0C19A14107C02F2AA2 /* [CP] Check Pods Manifest.lock */,
 				FE2D6D77270571DF0033C22D /* Sources */,
 				FE2D6D78270571DF0033C22D /* Frameworks */,
 				FE2D6D79270571DF0033C22D /* Resources */,
+				0DEDE95F42441A7370D3BB9E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE2D6D8B270571E00033C22D /* LaunchScreen.storyboard in Resources */,
+				FE2D6D9F2705E55B0033C22D /* GoogleService-Info.plist in Resources */,
 				FE2D6D88270571E00033C22D /* Assets.xcassets in Resources */,
 				FE2D6D86270571DF0033C22D /* Main.storyboard in Resources */,
 			);
@@ -132,13 +169,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DEDE95F42441A7370D3BB9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoBackup/Pods-PhotoBackup-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoBackup/Pods-PhotoBackup-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoBackup/Pods-PhotoBackup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E83A8F0C19A14107C02F2AA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoBackup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE2D6D77270571DF0033C22D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE2D6D83270571DF0033C22D /* ViewController.swift in Sources */,
+				FE2D6D98270578370033C22D /* HomeViewController.swift in Sources */,
+				FE2D6D952705780C0033C22D /* LoginViewController.swift in Sources */,
 				FE2D6D7F270571DF0033C22D /* AppDelegate.swift in Sources */,
+				FE2D6D9B270578950033C22D /* ImageViewController.swift in Sources */,
 				FE2D6D81270571DF0033C22D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +364,7 @@
 		};
 		FE2D6D90270571E00033C22D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2CECB88A30F04962AB84261 /* Pods-PhotoBackup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,15 +375,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.taro.kirameki.PhotoBackup;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.techacademy.taro.kirameki.PhotoBackup-20210927";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FE2D6D91270571E00033C22D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F75E14DE4C6214E2A7DE4F4 /* Pods-PhotoBackup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,10 +395,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.taro.kirameki.PhotoBackup;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.techacademy.taro.kirameki.PhotoBackup-20210927";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
