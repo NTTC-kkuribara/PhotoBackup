@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		FE2D6D98270578370033C22D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D6D97270578370033C22D /* HomeViewController.swift */; };
 		FE2D6D9B270578950033C22D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D6D9A270578950033C22D /* ImageViewController.swift */; };
 		FE2D6D9F2705E55B0033C22D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE2D6D9E2705E55B0033C22D /* GoogleService-Info.plist */; };
+		FE4EC8BD2705E8D100DD0AF7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EC8BC2705E8D100DD0AF7 /* TabBarController.swift */; };
+		FE4EC8C02705F0E400DD0AF7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EC8BF2705F0E400DD0AF7 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		FE2D6D97270578370033C22D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FE2D6D9A270578950033C22D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		FE2D6D9E2705E55B0033C22D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FE4EC8BC2705E8D100DD0AF7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		FE4EC8BF2705F0E400DD0AF7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,6 @@
 				E2CECB88A30F04962AB84261 /* Pods-PhotoBackup.debug.xcconfig */,
 				6F75E14DE4C6214E2A7DE4F4 /* Pods-PhotoBackup.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,7 +94,9 @@
 				FE2D6D7E270571DF0033C22D /* AppDelegate.swift */,
 				FE2D6D80270571DF0033C22D /* SceneDelegate.swift */,
 				FE2D6D9A270578950033C22D /* ImageViewController.swift */,
+				FE4EC8BF2705F0E400DD0AF7 /* RegisterViewController.swift */,
 				FE2D6D97270578370033C22D /* HomeViewController.swift */,
+				FE4EC8BC2705E8D100DD0AF7 /* TabBarController.swift */,
 				FE2D6D942705780C0033C22D /* LoginViewController.swift */,
 				FE2D6D84270571DF0033C22D /* Main.storyboard */,
 				FE2D6D87270571E00033C22D /* Assets.xcassets */,
@@ -218,7 +223,9 @@
 			files = (
 				FE2D6D98270578370033C22D /* HomeViewController.swift in Sources */,
 				FE2D6D952705780C0033C22D /* LoginViewController.swift in Sources */,
+				FE4EC8C02705F0E400DD0AF7 /* RegisterViewController.swift in Sources */,
 				FE2D6D7F270571DF0033C22D /* AppDelegate.swift in Sources */,
+				FE4EC8BD2705E8D100DD0AF7 /* TabBarController.swift in Sources */,
 				FE2D6D9B270578950033C22D /* ImageViewController.swift in Sources */,
 				FE2D6D81270571DF0033C22D /* SceneDelegate.swift in Sources */,
 			);
