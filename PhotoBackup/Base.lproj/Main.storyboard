@@ -59,6 +59,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgV-1V-f9u">
+                                <rect key="frame" x="57" y="459" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Mzi-i6-Wd7"/>
+                                </constraints>
+                                <state key="normal" title="ログアウト"/>
+                                <connections>
+                                    <action selector="handleLogoutButton:" destination="ys8-jG-W7L" eventType="touchUpInside" id="wBb-uM-lKB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FvR-XM-2pV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -68,10 +78,12 @@
                             <constraint firstItem="byf-sw-MFa" firstAttribute="top" secondItem="8Ex-XM-Ycy" secondAttribute="bottom" constant="10" id="J5e-Pr-ojW"/>
                             <constraint firstItem="P6D-8E-Suh" firstAttribute="top" secondItem="FvR-XM-2pV" secondAttribute="top" constant="130" id="Tk8-lZ-DEZ"/>
                             <constraint firstItem="byf-sw-MFa" firstAttribute="centerX" secondItem="QiM-Sq-HEW" secondAttribute="centerX" id="VxN-Sb-pdL"/>
+                            <constraint firstItem="dgV-1V-f9u" firstAttribute="top" secondItem="byf-sw-MFa" secondAttribute="bottom" constant="10" id="YS6-fH-A69"/>
                             <constraint firstItem="q3f-bf-P4l" firstAttribute="top" secondItem="FvR-XM-2pV" secondAttribute="top" constant="80" id="bqV-Z3-EvO"/>
                             <constraint firstItem="h6g-cd-yhY" firstAttribute="top" secondItem="q3f-bf-P4l" secondAttribute="bottom" constant="10" id="chg-IC-lbb"/>
                             <constraint firstItem="8Ex-XM-Ycy" firstAttribute="top" secondItem="h6g-cd-yhY" secondAttribute="bottom" constant="20" id="j06-NL-fsk"/>
                             <constraint firstItem="h6g-cd-yhY" firstAttribute="centerX" secondItem="QiM-Sq-HEW" secondAttribute="centerX" id="oW9-j6-LgX"/>
+                            <constraint firstItem="dgV-1V-f9u" firstAttribute="centerX" secondItem="QiM-Sq-HEW" secondAttribute="centerX" id="siY-Ua-VDg"/>
                             <constraint firstItem="q3f-bf-P4l" firstAttribute="centerX" secondItem="QiM-Sq-HEW" secondAttribute="centerX" id="yMp-10-q8t"/>
                         </constraints>
                     </view>
