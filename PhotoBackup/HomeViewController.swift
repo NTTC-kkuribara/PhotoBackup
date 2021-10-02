@@ -8,14 +8,26 @@
 import UIKit
 import Firebase
 import SVProgressHUD
+import Photos
 
 class HomeViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
-    @IBOutlet weak var currentBackupDateTextField: UILabel!
-    @IBOutlet weak var backupCountTextField: UILabel!
+    
+    // 自動バックアップの間隔時間を入力
+    @IBOutlet weak var timerTextField: UITextField!
+    
+    // タイマー
+    var timer: Timer!
+    
+    // タイマー用の時間のための変数
+    var timer_sec: Float = 0
+    
+    var collection: PHAssetCollection = PHAssetCollection()
+    var assets: PHFetchResult<PHAsset> = PHFetchResult()
+    var thumbnailSize = CGSize()
+    var sections: [[String]] = []
+    var cells: [[(dateStr: String, index: Int)]] = []
     
     @IBAction func handleBackupButton(_ sender: Any) {
-        
         // ライブラリ（カメラロール）を指定してピッカーを開く
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let pickerController = UIImagePickerController()
@@ -76,12 +88,60 @@ class HomeViewController: UIViewController,UIImagePickerControllerDelegate, UINa
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
+    @objc func timerAction(_ timer: Timer) {
+        autoBackup()
+    }
+    
+    func autoBackup() {
+            
+            let fetchOptions = PHFetchOptions()
+            fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
+            
+
+            if collection.localizedTitle == nil {
+
+                assets = PHAsset.fetchAssets(with: fetchOptions)
+                
+            } else {
+
+                assets = PHAsset.fetchAssets(in: collection, options: fetchOptions)
+            }
+            
+            var assetIndex: [(dateStr: String, index: Int)] = []
+
+            for i in 0 ... (assets.count - 1) {
+                
+                let asset = assets.object(at: i)
+                
+                let formatter = DateFormatter()
+                formatter.timeZone = TimeZone.current
+                formatter.locale = Locale.current
+                formatter.dateFormat = "yyyy-MM-dd"
+                
+                let dateStr = formatter.string(from: asset.creationDate!)
+
+                sections.append([dateStr])
+                assetIndex.append((dateStr: dateStr, index: i))
+            }
+            
+            let orderedSet = NSOrderedSet(array: sections)
+            sections = orderedSet.array as! [[String]]
+            
+            for section in sections {
+                
+                let sectionData: [(dateStr: String, index: Int)] = assetIndex.filter({$0.dateStr == section[0]})
+                
+                cells.append(sectionData)
+                
+            }
+        }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+   
     }
-    
 
     /*
     // MARK: - Navigation

@@ -34,32 +34,11 @@
                                     <action selector="handleBackupButton:" destination="ys8-jG-W7L" eventType="touchUpInside" id="LO1-ig-Tm3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新のバックアップ情報" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ex-XM-Ycy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自動バックアップの間隔時間（分）" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ex-XM-Ycy">
                                 <rect key="frame" x="57" y="384" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="4EF-Gk-NBq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT0-UQ-6Fr">
-                                <rect key="frame" x="57" y="415" width="300" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Hf4-zB-7Bp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="バックアップ件数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAk-Wb-FQR">
-                                <rect key="frame" x="57" y="446" width="139" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9P-6f-fnp">
-                                <rect key="frame" x="315" y="446" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,21 +51,25 @@
                                     <constraint firstAttribute="width" constant="100" id="bv7-Hj-2yR"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="デフォルトの設定は15分" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="byf-sw-MFa">
+                                <rect key="frame" x="57" y="415" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="h3Z-I2-TxK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FvR-XM-2pV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TAk-Wb-FQR" firstAttribute="top" secondItem="dT0-UQ-6Fr" secondAttribute="bottom" constant="10" id="85q-4c-7j3"/>
                             <constraint firstItem="P6D-8E-Suh" firstAttribute="centerX" secondItem="QiM-Sq-HEW" secondAttribute="centerX" id="8rr-nI-TQT"/>
                             <constraint firstItem="8Ex-XM-Ycy" firstAttribute="centerX" secondItem="QiM-Sq-HEW" secondAttribute="centerX" id="FJB-on-sX5"/>
+                            <constraint firstItem="byf-sw-MFa" firstAttribute="top" secondItem="8Ex-XM-Ycy" secondAttribute="bottom" constant="10" id="J5e-Pr-ojW"/>
                             <constraint firstItem="P6D-8E-Suh" firstAttribute="top" secondItem="FvR-XM-2pV" secondAttribute="top" constant="130" id="Tk8-lZ-DEZ"/>
-                            <constraint firstItem="dT0-UQ-6Fr" firstAttribute="centerX" secondItem="QiM-Sq-HEW" secondAttribute="centerX" id="VKz-xP-e54"/>
-                            <constraint firstItem="P9P-6f-fnp" firstAttribute="trailing" secondItem="dT0-UQ-6Fr" secondAttribute="trailing" id="VXM-gR-I7p"/>
-                            <constraint firstItem="P9P-6f-fnp" firstAttribute="top" secondItem="dT0-UQ-6Fr" secondAttribute="bottom" constant="10" id="Ws9-bS-qGq"/>
-                            <constraint firstItem="dT0-UQ-6Fr" firstAttribute="top" secondItem="8Ex-XM-Ycy" secondAttribute="bottom" constant="10" id="Yhz-bU-kFP"/>
+                            <constraint firstItem="byf-sw-MFa" firstAttribute="centerX" secondItem="QiM-Sq-HEW" secondAttribute="centerX" id="VxN-Sb-pdL"/>
                             <constraint firstItem="q3f-bf-P4l" firstAttribute="top" secondItem="FvR-XM-2pV" secondAttribute="top" constant="80" id="bqV-Z3-EvO"/>
                             <constraint firstItem="h6g-cd-yhY" firstAttribute="top" secondItem="q3f-bf-P4l" secondAttribute="bottom" constant="10" id="chg-IC-lbb"/>
-                            <constraint firstItem="TAk-Wb-FQR" firstAttribute="leading" secondItem="dT0-UQ-6Fr" secondAttribute="leading" id="hzs-EY-9fa"/>
                             <constraint firstItem="8Ex-XM-Ycy" firstAttribute="top" secondItem="h6g-cd-yhY" secondAttribute="bottom" constant="20" id="j06-NL-fsk"/>
                             <constraint firstItem="h6g-cd-yhY" firstAttribute="centerX" secondItem="QiM-Sq-HEW" secondAttribute="centerX" id="oW9-j6-LgX"/>
                             <constraint firstItem="q3f-bf-P4l" firstAttribute="centerX" secondItem="QiM-Sq-HEW" secondAttribute="centerX" id="yMp-10-q8t"/>
@@ -94,8 +77,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="バックアップ" image="icloud.and.arrow.up.fill" catalog="system" id="Qs4-Ux-Tpo"/>
                     <connections>
-                        <outlet property="backupCountTextField" destination="P9P-6f-fnp" id="5nJ-9P-fhI"/>
-                        <outlet property="currentBackupDateTextField" destination="dT0-UQ-6Fr" id="WnB-np-zJT"/>
+                        <outlet property="timerTextField" destination="byf-sw-MFa" id="wU2-kb-lzc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyl-iq-fz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
