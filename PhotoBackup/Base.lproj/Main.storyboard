@@ -101,7 +101,7 @@
             </objects>
             <point key="canvasLocation" x="-94" y="862"/>
         </scene>
-        <!--Image View Controller-->
+        <!--写真-->
         <scene sceneID="D4Y-oJ-T0e">
             <objects>
                 <viewController storyboardIdentifier="Image" id="iiR-UM-OcM" customClass="ImageViewController" customModule="PhotoBackup" customModuleProvider="target" sceneMemberID="viewController">
@@ -111,6 +111,7 @@
                         <viewLayoutGuide key="safeArea" id="gGf-Y4-x1M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="写真" image="photo.fill" catalog="system" id="kDm-2e-zfv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EV7-zW-9hn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -308,6 +309,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="ys8-jG-W7L" kind="relationship" relationship="viewControllers" id="oSy-dS-OmI"/>
+                        <segue destination="iiR-UM-OcM" kind="relationship" relationship="viewControllers" id="W5b-RQ-Avl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzY-hm-6fz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -318,6 +320,7 @@
     <resources>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="icloud.and.arrow.up.fill" catalog="system" width="128" height="106"/>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

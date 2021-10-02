@@ -19,6 +19,8 @@
 		FE2D6D9F2705E55B0033C22D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE2D6D9E2705E55B0033C22D /* GoogleService-Info.plist */; };
 		FE4EC8BD2705E8D100DD0AF7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EC8BC2705E8D100DD0AF7 /* TabBarController.swift */; };
 		FE4EC8C02705F0E400DD0AF7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EC8BF2705F0E400DD0AF7 /* RegisterViewController.swift */; };
+		FEB420022708317A007170BD /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB420012708317A007170BD /* Const.swift */; };
+		FEB4200527083580007170BD /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4200427083580007170BD /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		FE2D6D9E2705E55B0033C22D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FE4EC8BC2705E8D100DD0AF7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FE4EC8BF2705F0E400DD0AF7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FEB420012708317A007170BD /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		FEB4200427083580007170BD /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,11 +96,13 @@
 			children = (
 				FE2D6D9E2705E55B0033C22D /* GoogleService-Info.plist */,
 				FE2D6D7E270571DF0033C22D /* AppDelegate.swift */,
+				FEB420012708317A007170BD /* Const.swift */,
 				FE2D6D80270571DF0033C22D /* SceneDelegate.swift */,
 				FE2D6D9A270578950033C22D /* ImageViewController.swift */,
 				FE4EC8BF2705F0E400DD0AF7 /* RegisterViewController.swift */,
 				FE2D6D97270578370033C22D /* HomeViewController.swift */,
 				FE4EC8BC2705E8D100DD0AF7 /* TabBarController.swift */,
+				FEB4200427083580007170BD /* PostData.swift */,
 				FE2D6D942705780C0033C22D /* LoginViewController.swift */,
 				FE2D6D84270571DF0033C22D /* Main.storyboard */,
 				FE2D6D87270571E00033C22D /* Assets.xcassets */,
@@ -222,10 +228,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE2D6D98270578370033C22D /* HomeViewController.swift in Sources */,
+				FEB4200527083580007170BD /* PostData.swift in Sources */,
 				FE2D6D952705780C0033C22D /* LoginViewController.swift in Sources */,
 				FE4EC8C02705F0E400DD0AF7 /* RegisterViewController.swift in Sources */,
 				FE2D6D7F270571DF0033C22D /* AppDelegate.swift in Sources */,
 				FE4EC8BD2705E8D100DD0AF7 /* TabBarController.swift in Sources */,
+				FEB420022708317A007170BD /* Const.swift in Sources */,
 				FE2D6D9B270578950033C22D /* ImageViewController.swift in Sources */,
 				FE2D6D81270571DF0033C22D /* SceneDelegate.swift in Sources */,
 			);
